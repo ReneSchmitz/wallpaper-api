@@ -2,10 +2,16 @@
   margin: 20px;
   display: grid;
   place-items: center;
+  position: relative;
+  max-width: 300px;
 }
-
+.imageContainer > .icon-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
 .imageThumb {
-  width: 40%;
+  width: 100%;
   margin: 0;
 }
 
