@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import ImagePreview from "./components/ImagePreview";
+import FavouriteImage from "./components/FavouriteImage";
 import { getRandomImage } from "./api/getRandomImage";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           author={randomImage.user.name}
         />
       )}
+      <FavouriteImage photoId="UjD08DRW24E" />
     </main>
   );
 }
