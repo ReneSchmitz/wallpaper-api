@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 import ImagePreview from "./components/ImagePreview";
-import FavouriteImage from "./components/FavouriteImage";
+// import FavouriteImage from "./components/FavouriteImage";
+import FavouriteImageList from "./components/FavouriteImageList";
 import { getRandomImage } from "./api/getRandomImage";
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
           author={randomImage.user.name}
         />
       )}
-      <FavouriteImage photoId="UjD08DRW24E" />
+      <FavouriteImageList
+        photoIds={["UjD08DRW24E", "k38v31SkZdo", "AW_P_NU9MI8"]}
+      />
     </main>
   );
 }
