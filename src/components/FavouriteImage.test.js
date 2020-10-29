@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import FavouriteImage from "./FavoriteImage";
+import FavouriteImage from "./FavouriteImage";
 import { render, screen } from "@testing-library/react";
 
 it("renders without crashing", () => {
